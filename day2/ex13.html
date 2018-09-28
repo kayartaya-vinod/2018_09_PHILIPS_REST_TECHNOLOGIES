@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Demo</title>
+
+    <script src="../assets/thirdparty/jquery/jquery-3.3.1.js"></script>
+    <script>
+        // $( function(){} ); // the callback supplied is executed after DOM is ready
+        // $("selector"); // this returns all matching elements based on the selector
+        // $("<tagname>"); // creates and returns a new DOM element, not adding to DOM itself
+
+
+        // $(function(){
+        //     alert('DOM is now ready!');
+        // });
+
+        // alert('DOM is not yet ready!');
+
+        $(function () {
+            // $("h1").css("color", "red").css("background-color", "pink");
+            $("h1").css({ color: "red", backgroundColor: "khaki" });
+            $("ul > li:odd").css("color", "blue");
+        });
+    </script>
+</head>
+
+<body>
+    <h1>jQuery Demo</h1>
+    <hr>
+    <!-- ul#list1>li{list item $}*10 -->
+    <ul id="list1">
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+        <li>list item 6</li>
+        <li>list item 7</li>
+        <li>list item 8</li>
+        <li>list item 9</li>
+        <li>list item 10</li>
+    </ul>
+
+    <ol>
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4</li>
+        <li>list item 5</li>
+    </ol>
+</body>
+
+</html>

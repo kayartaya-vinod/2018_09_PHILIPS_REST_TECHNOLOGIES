@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Demo</title>
+
+    <style>
+        ul > li { /* space --> ancestor/descendant, > means parent/child */
+            border: 1px solid red;
+            padding: 5px;
+        }
+
+        /* li:first-child */
+        ul#firstlist > li:nth-child(odd) {
+            background-color: yellow;
+        }
+        li:hover {
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Demo</h1>
+    <hr>
+    <ul id="firstlist">
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        <li>list item 4
+            <ol>
+                <li>list item 41</li>
+                <li>list item 42</li>
+                <li>list item 43</li>
+                <li>list item 44</li>
+            </ol>
+        </li>
+        <li>list item 5</li>
+        <li>list item 6
+            <ul>
+                <li>list item 61</li>
+                <li>list item 62</li>
+                <li>list item 63</li>
+            </ul>
+        </li>
+        <li>list item 7</li>
+        <li>list item 8</li>
+        <li>list item 9</li>
+        <li>list item 10</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Demo</title>
+
+    <!-- external styles -->
+    <!-- <link rel="stylesheet" href="location-of-external-css-file" type="text/css"> -->
+
+
+    <style type="text/css">
+        /* internal styles */
+        /* selector { } */
+        /* selector can be element, id, class, attributes,... */
+        h1#heading1 {
+            color: red;
+        }
+
+        p#heading1 {
+            /* border: 1px solid black; */
+            border-width: 1px;
+            border-style: dashed;
+            border-color: blueviolet;
+        }
+
+        li.a {
+            border: 1px solid red;
+        }
+        .b {
+            color: red;
+        }
+
+        p#heading1.b, p#heading2 {
+            background-color: lightblue;
+        }
+
+        div[data-num] {
+            border: 1px solid blue;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="heading1" style="background-color: pink; ">CSS Demo</h1>
+    <h1>Philips Innovation Campus</h1>
+    <p id="heading1" class="b">This is some paragraph</p>
+    <p class="a">This is another paragraph</p>
+    <p id="heading2">Some content here...</p>
+    <ul>
+        <li>List item 1</li>
+        <li class="a">List item 2</li>
+        <li class="b">List item 3</li>
+        <li class="a b">List item 4</li>
+        <li>List item 5</li>
+    </ul>
+
+    <p data-num="1">This is a number 1 paragraph!</p>
+    <p data-num="2">This is a number 2 paragraph!</p>
+    <div data-num="3">This is a number 3 div!</div>
+
+</body>
+
+</html>

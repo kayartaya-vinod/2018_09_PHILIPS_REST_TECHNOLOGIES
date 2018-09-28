@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>ES 6 features</h1>
+    <p>See console log for output!</p>
+    <script>
+        // constructor (name of the constructor starts with Capital letter as a convension)
+        function Person(name, city) {
+            // my_name = 'vinod'; // no 'var' or 'let'; becomes global
+            // let my_city = 'bangalore'; // with 'var' and 'let' becomes a local variable
+            this.name = name;
+            this.city = city;
+            // this.printDetails = function() {
+            //     console.log('%s is from %s', this.name, this.city);
+            // };
+        }
+
+        Person.prototype.printDetails = function () {
+            console.log('%s is from %s', this.name, this.city);
+        };
+
+        var p1 = new Person('Vinod', 'Bangalore');
+        var p2 = new Person('Shyam', 'Shivamogga');
+
+        console.log(p1);
+        console.log(p2);
+
+        p1.printDetails();
+        p2.printDetails();
+
+        // ES6 style of class (for VM this is still a function)
+        class Book {
+
+            constructor(data) {
+                console.log('data is', data)
+                this.id = data.id;
+                this.title = data.title;
+                this.price = data.price;
+                this.pages = data.pages;
+            }
+
+            printBookDetails() {
+                console.log('Id      = %d', this.id);
+                console.log('Title   = %s', this.title);
+                console.log('Price   = %s', this.price);
+                console.log('Pages   = %s', this.pages);
+            }
+        }
+
+        var b1 = new Book({ title: 'Let us C', price: 250, pages: 150, id: 12 });
+        console.log(b1);
+
+        let fname = 'vinod', lname='kumar', city='bangalore';
+        console.log(`The person ${fname + ' ' + lname} is from ${city.toUpperCase()} and did not author the book ${b1.title}`);
+
+
+    </script>
+</body>
+
+</html>

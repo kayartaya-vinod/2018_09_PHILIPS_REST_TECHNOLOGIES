@@ -1,0 +1,28 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    border: 1px dotted #aaa;
+    padding: 20px;
+    width: 60%;
+    min-height: 600px;
+    margin: 0 auto; /* center aligns the container with in the window */
+}
+
+h1 {
+    color: magenta;
+}
+
+p {
+    color: blue;
+}
+
+img#cat_jpg {
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+    border: 2px dashed red;
+    border-radius: 20px;
+}

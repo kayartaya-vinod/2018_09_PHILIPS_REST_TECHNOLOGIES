@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+    <hr>
+    <form action="http://vinod.co" method="POST">
+        <div>
+            <label for="fullname">Enter your fullname</label>
+            <input type="text" required minlength="3" id="fullname" name="fullname" placeholder="eg. John Doe"
+                autofocus>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="gender_male" value="MALE" checked>
+            <label for="gender_male">Male</label>
+            <input type="radio" name="gender" id="gender_female" value="FEMALE">
+            <label for="gender_female">Female</label>
+        </div>
+        <div>
+            <label>What are your favorite colors?</label>
+            <input type="checkbox" name="fav_color" id="fav_color_RED" value="RED">
+            <label for="fav_color_RED">Red</label>
+            <input type="checkbox" name="fav_color" id="fav_color_WHITE" value="WHITE">
+            <label for="fav_color_WHITE">White</label>
+            <input type="checkbox" name="fav_color" id="fav_color_BLACK" value="BLACK">
+            <label for="fav_color_BLACK">Black</label>
+        </div>
+
+        <div>
+            <label for="car">Which is your favorite car?</label>
+            <input type="text" name="car" id="car" list="cars_list">
+
+            <datalist id="cars_list">
+                <option>Honda City</option>
+                <option>Hyundai Verna</option>
+                <option>Maruti Baleno</option>
+                <option>Benz</option>
+                <option>BMW</option>
+            </datalist>
+        </div>
+
+        <div><label for="zone">Which part of the country?</label>
+            <select name="zone" id="zone">
+                <option value="N">North</option>
+                <option value="E">East</option>
+                <option value="W">West</option>
+                <option selected value="S">South</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="message">Enter your message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    color: #777;
+}
+
+.container {
+    padding: 20px;
+    width: 60%;
+    min-height: 600px;
+    margin: 0 auto; /* center aligns the container with in the window */
+}
+
+img#cat_jpg {
+    display: none;
+}

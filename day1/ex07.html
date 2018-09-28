@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            margin: 10px;
+            display: inline-block
+        }
+
+        #d1 {
+            margin: 0px;
+            background-color: burlywood;
+            transform: translateY(30px) rotate(15deg) translateX(30px);
+            /* position: fixed;
+            left: 0px; */
+        }
+
+        #d3 {
+            background-image: url(cat.jpg);
+            background-size: 150px 150px;
+            transition: all 200ms ease-in-out;
+            opacity: 0.1;
+        }
+
+        #d3:hover {
+            transform: scale(1.5) rotate(360deg);
+            opacity: 1;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .container > div {
+            border: 1px solid #aaa;
+            padding: 30px;
+        }
+
+        #f1 > div > label {
+            display: inline-block;
+            text-align: right;
+        }
+        #f1 > div > * {
+            width: 45%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="d1" class="box"></div>
+    <div id="d2" class="box"></div>
+    <div id="d3" class="box"></div>
+    <div id="d4" class="box"></div>
+    <div id="d5" class="box"></div>
+
+    <div class="container">
+        <div>
+            <p>The API reference documentation provides detailed information about a function or object in Node.js.
+                This documentation indicates what arguments a method accepts, the return value of that method, and what
+                errors may be related to that method. It also indicates which methods are available for different
+                versions of Node.js.</p>
+
+            <p>This documentation describes the built-in modules provided by Node.js. It does not document modules
+                provided by the community.</p>
+
+            <p>The ES6 section describes the three ES6 feature groups, and details which features are enabled by
+                default in Node.js, alongside explanatory links. It also shows how to find which version of V8 shipped
+                with a particular Node.js release.</p>
+
+            <form id="f1">
+                <div>
+                    <label for="">Enter name</label>
+                    <input type="text"> 
+                </div>
+                <div>
+                    <label for="">Enter your email address</label>
+                    <input type="text"> 
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Demo</title>
+    <script>
+        // alert('Hello, World!');
+        hello();
+        hello();
+
+        function hello() {
+            console.log('Hello, world!');
+        }
+
+        // builtin function of Browser's web api
+        // setTimeout(hello, 5000);
+
+        // setTimeout(function(){
+        //     console.log('Hello after 5s');
+        // }, 5000);
+
+        setTimeout(() => {
+            console.log('Hello after 5s');
+        }, 5000);
+
+
+    </script>
+</head>
+
+<body>
+    <h1>JS Demo</h1>
+</body>
+
+</html>

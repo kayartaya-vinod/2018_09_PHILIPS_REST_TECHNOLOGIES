@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Demo</title>
+    <style>
+        
+        #images img {
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        #picture1 {
+            border-radius: 50% !important;
+            opacity: 0.5;
+            left: 150px;
+            position: relative;
+            z-index: 5;
+        }
+
+        #picture1:hover {
+            opacity: 1;
+        }
+        #picture2 {
+            z-index: 12;
+            position: relative;
+        }
+
+        input[type=text], input[type=tel], input[type=password], input[type=email] {
+            border-left: 10px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Demo</h1>
+    <hr>
+
+    <div>
+        <label for="name">Enter name</label>
+        <input type="text" name="name" id="name" placeholder="eg. John Doe">
+    </div>
+
+    <div id="images">
+        <img id="picture1" src="cat.jpg" alt="Cute Cat!" title="Cute Kitten">
+        <img src="https://m.media-amazon.com/images/G/31/img17/AmazonBusiness/Bunks/Sidekick_264_190_01._CB471305835_.jpg"
+            alt="" id="picture2">
+    </div>
+</body>
+
+</html>
